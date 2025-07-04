@@ -8,7 +8,6 @@ import CustomSlider from '@/components/ui/CustomSlider';
 import { CustomHistoryTable } from '@/components/ui/CustomHistoryTable';
 import { ResultCard } from '@/components/ui/ResultCard';
 import { useGameContext } from '@/context/GameContext';
-import { GameCondition } from '@/types/game';
 
 export default function Home() {
   const { state, dispatch } = useGameContext();

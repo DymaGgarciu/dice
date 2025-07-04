@@ -79,4 +79,6 @@ export const CustomHistoryTable: React.FC<CustomHistoryTableProps> = React.memo(
       </TableBody>
     </Table>
   </TableContainer>
-)); 
+));
+
+CustomHistoryTable.displayName = "CustomHistoryTable"; 

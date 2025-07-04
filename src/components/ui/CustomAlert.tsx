@@ -11,7 +11,6 @@ type CustomAlertProps = {
 
 export const CustomAlert: React.FC<CustomAlertProps> = React.memo(({ isWin, title, description }) => {
   const bg = isWin ? 'var(--success-main, #2E7D32)' : 'var(--error-main, #D32F2F)';
-  const height = isWin ? 48 : 76;
   const Icon = isWin ? CheckCircleIcon : ErrorIcon;
 
   return (
@@ -58,4 +57,6 @@ export const CustomAlert: React.FC<CustomAlertProps> = React.memo(({ isWin, titl
       )}
     </Box>
   );
-}); 
+});
+
+CustomAlert.displayName = "CustomAlert"; 

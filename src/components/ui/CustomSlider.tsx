@@ -17,7 +17,7 @@ interface CustomSliderProps {
 }
 
 const CustomSlider: React.FC<CustomSliderProps> = ({ value, onChange }) => {
-  const handleChange = (event: Event, newValue: number | number[], activeThumb: number) => {
+  const handleChange = (event: Event, newValue: number | number[]) => {
     onChange(event, Array.isArray(newValue) ? newValue[0] : newValue);
   };
   return (

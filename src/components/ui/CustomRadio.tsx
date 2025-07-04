@@ -44,4 +44,6 @@ export const CustomRadio: React.FC<CustomRadioProps> = React.memo(({
       borderRadius: 4,
     }}
   />
-)); 
+));
+
+CustomRadio.displayName = "CustomRadio"; 

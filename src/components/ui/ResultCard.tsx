@@ -27,4 +27,6 @@ export const ResultCard: React.FC<ResultCardProps> = React.memo(({ value }) => (
   >
     {value}
   </Box>
-)); 
+));
+
+ResultCard.displayName = "ResultCard"; 
