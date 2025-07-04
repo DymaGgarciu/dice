@@ -18,7 +18,8 @@ export const PlayButton: React.FC<PlayButtonProps> = ({ children = 'Play', ...pr
         0px 3px 1px -2px #00000033,
         0px 2px 2px 0px #00000024,
         0px 1px 5px 0px #0000001F
-      `
+      `,
+      width: '100%',
     }}
     {...props}
   >

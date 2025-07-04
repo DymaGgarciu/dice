@@ -8,7 +8,7 @@ interface ResultCardProps {
 export const ResultCard: React.FC<ResultCardProps> = React.memo(({ value }) => (
   <Box
     sx={{
-      width: 320,
+      width: '100%',
       height: 200,
       borderRadius: 3,
       background: '#f5f5f5',

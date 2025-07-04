@@ -60,8 +60,8 @@ export default function Home() {
           <CustomAlert isWin={isWin} title={isWin ? 'You won' : 'You lost'} description={alertDesc} />
         )}
       </Box>
-      <Box sx={{ mt: 10, mb: 2, width: 350, mx: 'auto' }}>
-        <Paper elevation={0} sx={{ bgcolor: '#fff', borderRadius: 3, p: 4, mb: 2, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <Box sx={{  mt: 15,mb: 2, width: 320, mx: 'auto' }}>
+        <Paper elevation={0} sx={{ bgcolor: '#fff', borderRadius: 3,  mb: 2, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <ResultCard value={result !== null ? result : 100} />
           <Stack direction="row" spacing={4} justifyContent="center" alignItems="center" sx={{ mt: 2, mb: 1 }}>
             <CustomRadio label="Under" checked={state.condition === 'less'} value="less" onChange={() => dispatch({ type: 'SET_CONDITION', payload: 'less' })} />
@@ -74,7 +74,7 @@ export default function Home() {
             </Box>
             <CustomSlider value={state.threshold} onChange={handleSliderChange} />
           </Box>
-          <PlayButton onClick={handlePlay} disabled={state.isLoading} sx={{ width: 350, borderRadius: 2, boxShadow: '0px 2px 8px 0px #0000001A' }}>
+          <PlayButton onClick={handlePlay} disabled={state.isLoading} >
             PLAY
           </PlayButton>
         </Paper>

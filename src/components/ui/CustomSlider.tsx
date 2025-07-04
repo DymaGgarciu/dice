@@ -31,7 +31,7 @@ const CustomSlider: React.FC<CustomSliderProps> = ({ value, onChange }) => {
         max={100}
         valueLabelDisplay="auto"
         color="secondary"
-        sx={{ color: '#9C27B0' }}
+        sx={{ color: '#9C27B0', width: '100%' }}
       />
     </div>
   );
